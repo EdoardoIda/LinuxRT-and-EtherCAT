@@ -9,7 +9,7 @@ byte updateFlag = 0; // When set, the master commanded to set a new frequency, o
 byte frequency = 0; // The commanded pwm frequency from the master
 byte handShaker = 0; // When set, we communicate to the master that the message has been received and processed
 byte numberOfCalls = 0; // The number of times the led has been updated since Init
-byte cycleCounter = 0;
+byte cycleCounter = 0; // The number of cycles between each master call to the slave
 
 void setup() {
   pinMode (onboardLed,OUTPUT);
