@@ -1,0 +1,19 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+EasyMaster	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+InitMaster	KEYWORD2
+ExchangeMaster	KEYWORD2
+WriteBuffer	KEYWORD2
+ReadBuffer	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
