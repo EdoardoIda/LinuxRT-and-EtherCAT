@@ -1,6 +1,11 @@
 QT += core gui widgets
 
 CONFIG += c++11 console
+CONFIG -= app_bundle
+
+INCLUDEPATH += /opt/etherlab/include/
+DEPENDPATH  += /opt/etherlab/lib/
+LIBS        += /opt/etherlab/lib/libethercat.a
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -14,11 +19,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    easycatinterfaceclass.cpp
-
-HEADERS += \
-    threadsbuilder.h \
-    easycatinterfaceclass.h
+    easycatinterface.cpp \
+    ethercatmaster.cpp \
+    easycatslave.cpp \
+    easycatmaster.cpp
 
 FORMS += \
-    easycatinterfaceclass.ui
+    easycatinterface.ui
+
+HEADERS += \
+    easycatinterface.h \
+    ethercatmaster.h \
+    easycatslave.h \
+    ethercatslave.h \
+    easycatmaster.h
